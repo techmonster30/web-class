@@ -1,0 +1,30 @@
+:root{
+    --primary:green;
+    --sec:black;
+    --tet:white;
+}
+#Services{
+    font-size: 3em;
+    text-align: center;
+    text-shadow: gray 5px 2px 2px; 
+ 
+}
+div {
+    text-align: center;
+    border-color: var(--primary);
+    background-color: var(--sec);
+}
+#section{
+    background-color: var(--sec);
+    color: var(--tet);
+}
+#Readmore{
+    background-color: var(--primary);
+    color: var(--sec);
+    border-color: var(--tet)
+}
+#footer{
+    background-color: grey;
+    height: 150px;
+    
+}

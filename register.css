@@ -1,0 +1,50 @@
+:root{
+    --primary:orange;
+    --sec:rgb(4, 4, 72);
+    --tet:black;
+}
+#home{
+    font-size: 3em;
+    text-align: center;
+    text-shadow: gray 5px 2px 2px;
+}
+
+body{
+    background-color: white
+}
+.nav{
+    background-color:var(--sec)
+}
+#section{
+    background-color: var(--sec);
+    color: white;
+    font-family: verdana;
+    font-weight: bold;
+}
+label{
+    color: var(--primary)
+}
+input{
+    border: gray;
+    box-shadow: gray 2px 2px 2px
+    border-radius: 2px;
+    background-color: rgb(213, 203, 203)
+}
+input[type="password"]{
+    background-color: brown;
+}
+form button{
+    background-color: var(--sec);
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 10%;
+    border-radius: 10px;
+}
+form button:hover{
+    background-color: white;
+    border: solid var(--sec) 1px;
+    color: var(--sec);
+    cursor: pointer;
+    transition: 300ms;
+}

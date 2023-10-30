@@ -1,0 +1,221 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary:green;
+    --sec:red;
+    --tet:grey;
+}
+nav{
+    background-color: var(--primary);
+    display: flex;
+}
+.menu ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.logo img{
+    width: 20%;
+    border-radius: 30%;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: var(--sec);
+    font-family: system-ui;
+    font-size: 1.3em;
+    padding-left: 20px;
+    line-height: 30px;
+}
+.menu ul li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 300ms;
+}
+.banner{
+    background-color: var(--sec);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bannersection{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    align-items: end;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.bannersection img{
+    width: 100%;
+}
+.bannersection figure{
+    border: solid white 2px;
+}
+.bannerpara{
+    padding: 10px;
+    text-align: justify;
+}
+.bannersection>div{
+    width: 30%;
+    border: solid var(--primary) 1px;
+}
+.banner h1{
+    text-align: center;
+    color: black;
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+}
+.menu{
+    margin-left: 15%;
+}
+.banner span{
+    color: black;
+}
+.banner p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.btn{
+    margin-left: 30%;
+}
+.btn button{
+    padding: 20px;
+    background: linear-gradient(120deg,var(--primary),var(--sec));
+    color: goldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    border: solid 1px var(--primary);
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.icon{
+    margin-left: 42%;
+    margin-top: 50px;
+}
+.btn button:hover{
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: dotted;
+    transition: 300ms;
+    background: black;
+}
+.article{
+    width: 70%;
+}
+.learn{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 50px;
+
+}
+.learn .figure{
+    order: 2;
+
+}
+.learn .article{
+    order: 1;
+}
+.figure img{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.gallery>div{
+    border: solid var(--primary);
+}
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    margin: 15%;
+    margin-top: 20px;
+    grid-gap: 20px;
+    animation-name: gallery;
+    animation-duration: 5s;
+}
+.bg{
+    background-image: url(https://ugc.futurelearn.com/uploads/images/74/01/header_small_740189bb-62fa-42a8-8a1b-7584a68a4bc2.jpg);
+    width: 70%;
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation-name: danwi;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+
+}
+@keyframes danwi {
+    0%{background-image: url(https://media.istockphoto.com/id/1021137062/photo/software-developers-doing-some-research.webp?b=1&s=170667a&w=0&k=20&c=znjdTNmqhzGKmMG3TNxjg2n4Fe2Yj_7poicAC9T-zBI=);}
+    50%{background-image: url(https://media.istockphoto.com/id/1281862639/photo/young-african-american-businesswoman-at-home-office-working-late.webp?b=1&s=170667a&w=0&k=20&c=J_3B5tqlUeeZsUo31L4MzNfSqoeUDBeFK-hHhPn66jI=)}
+    100%{background-image: url(https://images.unsplash.com/photo-1532522953890-ccc87dfeb0b7?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGVhcm4lMjBjb2Rpbmd8ZW58MHx8MHx8fDA%3D )}   
+}
+.gallery img{
+    height: 100%;
+}
+@keyframes gallery {
+    0%{margin-left: -2000px;}
+    20%{margin-left: 5%;}
+    60%{margin-left: 10%;}
+    100%{margin-left: 15%;}
+    
+}
+#one{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/* }
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: square;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: paused;
+} */
+/* @keyframes square {
+    0%{background-color: red;
+    left: 0px;
+top: 0px;
+}
+    25%{background-color: gold;
+    left: 500px;
+top: 500px;
+}
+    50%{background-color: green;
+    left: 0px;
+top: 0px;
+border-radius: 50%;
+}
+    75%{background-color: dodgerblue;
+    left: 0px;
+top: 500px;
+}
+100%{background-color: lightgoldenrodyellow;
+left: 0px;
+top: 5px;
+border-radius: 0px;
+}
+
+} */

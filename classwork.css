@@ -1,0 +1,59 @@
+:root{
+    --primary:black;
+    --sec:white;
+    --tet:blue;  
+}
+#dv{
+    background-color: var(--primary);
+    color: var(--sec);
+    text-align: center;
+}
+body{
+    background-color: var(--primary);
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+
+}
+.bg{
+}
+div {
+    text-align: center;
+}
+p{
+    color: var(--sec);
+    text-align: center;
+}
+h3{
+    color: var(--sec);
+    font-size: 1.5em;
+}
+.figure img{
+    border: solid var(--primary) 5px;
+    border-radius: 50%;
+}
+.dg{
+    font-size: 2em;
+}
+.section span{
+    border: solid white 2px;
+    padding: 2px 2px 2px 2px;
+    
+}
+.kg{
+    z-index: 400;
+    position: relative;
+}
+.stardom{
+    width: 60%;
+    border: solid grey 2px;
+    background: linear-gradient(40deg, rgb(31, 31, 203), grey, black);
+    z-index: 200;
+    line-height: 25px;
+    font-family: cerapro, sans-serif;
+    font-size: 1em;
+    margin-top: -50px;
+    position: relative;
+
+}
